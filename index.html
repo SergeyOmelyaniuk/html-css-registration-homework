@@ -1,67 +1,65 @@
 <!DOCTYPE html>
 <html lang="eng">
-<head>
-	<title>Form</title>
-	<meta http-equiv ="Content-type" content ="text/html; charset=UTF-8"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<link href="css/style.css" rel="stylesheet">
-	<!-- Include fonts -->
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400&display=swap" rel="stylesheet">
-
-</head>
-<body>
-	<div class="wrapper">
-		<div class="container">
-			<div class="tabs">
-				<div class="tabs__wrap">
-					<input class="tabs__input" type="radio" name="tabs" id="tab-1" checked>
-					<input class="tabs__input" type="radio" name="tabs" id="tab-2">
-					<label class="tabs__label tab-1" for="tab-1">Sign in</label>
-					<label class="tabs__label tab-2" for="tab-2">Sign up</label>
-					<div class="tabs__content content-1">
-						<form class="form form_signin" method="post" action="https://reqres.in/api/login">
-							<div class="form__item">
-								<input class="form__input" name="email" type="email" placeholder=" " autocomplete="off" required>
-								<label class="form__label">Email</label>
-							</div>
-							<div class="form__item">
-								<input class="form__input" name="password" type="password" placeholder=" " autocomplete="off" minlength="6" required>
-								<label class="form__label">Password</label>
-							</div>
-							<div class="form__confirm form__confirm_signin">
-								<input class="form__checkbox" name="Keep-me-logged-in" type="checkbox" id="keep">
-								<label for="keep">Keep me logged in</label>
-							</div>
-							<button class="form__button">Login</button>
-							<a class="form__forgot-password" href="#">Forgot password?</a>
-						</form>
-					</div>
-					<div class="tabs__content content-2">
-						<form class="form form_signup" method="post" action="https://reqres.in/api/register">
-							<div class="form__item">
-								<input class="form__input" name="phone" type="tel" placeholder=" " autocomplete="off" pattern="[+]{1}[0-9]{12}" required>
-								<label class="form__label">Mobile Phone</label>
-							</div>
-							<div class="form__item">
-								<input class="form__input" name="email" type="email" placeholder=" " autocomplete="off" required>
-								<label class="form__label">Email ID</label>
-							</div>
-							<div class="form__item">
-								<input class="form__input" name="password" type="password" placeholder=" " autocomplete="off" minlength="6" required>
-								<label class="form__label">Password</label>
-							</div>
-							<div class="form__confirm form__confirm_signup">
-								<input class="form__checkbox" name="agree-to-terms-and-conditions" type="checkbox" id="agree" required>
-								<label for="agree">I agree to terms and conditions</label>
-							</div>
-							<button class="form__button">Register</button>
-						</form>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<script src="js/main.js"></script>
-</body>
+  <head>
+    <title>Form</title>
+    <meta http-equiv ="Content-type" content ="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="css/style.css" rel="stylesheet">
+    <!-- Include fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <div class="tabs">
+          <div class="tabs__wrap">
+            <input class="tabs__input" type="radio" name="tabs" id="tab-1" checked>
+            <input class="tabs__input" type="radio" name="tabs" id="tab-2">
+            <label class="tabs__label tab-1" for="tab-1">Sign in</label>
+            <label class="tabs__label tab-2" for="tab-2">Sign up</label>
+            <div class="tabs__content content-1">
+              <form class="form form_signin" method="post" action="https://reqres.in/api/login">
+                <div class="form__item">
+                  <input class="form__input" name="email" type="email" placeholder=" " autocomplete="off" required>
+                  <label class="form__label">Email</label>
+                </div>
+                <div class="form__item">
+                  <input class="form__input" name="password" type="password" placeholder=" " autocomplete="off" minlength="6" required>
+                  <label class="form__label">Password</label>
+                </div>
+                <div class="form__confirm form__confirm_signin">
+                  <input class="form__checkbox" name="Keep-me-logged-in" type="checkbox" id="keep">
+                  <label for="keep">Keep me logged in</label>
+                </div>
+                <button class="form__button">Login</button>
+                <a class="form__forgot-password" href="#">Forgot password?</a>
+              </form>
+            </div>
+            <div class="tabs__content content-2">
+              <form class="form form_signup" method="post" action="https://reqres.in/api/register">
+                <div class="form__item">
+                  <input class="form__input" name="phone" type="tel" placeholder=" " autocomplete="off" pattern="[+]{1}[0-9]{12}" required>
+                  <label class="form__label">Mobile Phone</label>
+                </div>
+                <div class="form__item">
+                  <input class="form__input" name="email" type="email" placeholder=" " autocomplete="off" required>
+                  <label class="form__label">Email ID</label>
+                </div>
+                <div class="form__item">
+                  <input class="form__input" name="password" type="password" placeholder=" " autocomplete="off" minlength="6" required>
+                  <label class="form__label">Password</label>
+                </div>
+                <div class="form__confirm form__confirm_signup">
+                  <input class="form__checkbox" name="agree-to-terms-and-conditions" type="checkbox" id="agree" required>
+                  <label for="agree">I agree to terms and conditions</label>
+                </div>
+                <button class="form__button">Register</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

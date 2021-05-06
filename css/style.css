@@ -71,9 +71,8 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
-
 .wrapper {
-  background-image: url(/images/Background.png);
+  background-image: url(../images/background.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
