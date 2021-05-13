@@ -10,7 +10,7 @@
   justify-content: center;
   align-items: center;
   color: white;
-  font-family: "Raleway", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .container {
@@ -55,26 +55,13 @@ button {
     width: 100%;
     display: none;
   }
-  & .tab-1::after {
-    content: "";
-    display: block;
-    width: 72px;
-    height: 3px;
-    background-color: #ffab1a;
-    opacity: 0;
-    position: absolute;
-    top: 28px;
-    left: 0;
+  & .tab-1 {
+    border-bottom: 3px solid transparent;
+    padding-bottom: 8px;
   }
-  & .tab-2::after {
-    content: "";
-    display: block;
-    width: 80px;
-    height: 3px;
-    background-color: #ffab1a;
-    opacity: 0;
-    position: absolute;
-    top: 28px;
+  & .tab-2 {
+    border-bottom: 3px solid transparent;
+    padding-bottom: 8px;
   }
 }
 
@@ -83,14 +70,14 @@ button {
   display: block;
 }
 
-#tab-1:checked ~ .tab-1::after,
-#tab-2:checked ~ .tab-2::after {
-  opacity: 1;
+#tab-1:checked ~ .tab-1,
+#tab-2:checked ~ .tab-2 {
+  border-bottom: 3px solid #ffab1a;
 }
 
 .form {
   &_signin {
-    padding-top: 95px;
+    padding-top: 84px;
     padding-bottom: 30px;
   }
   &_signup {
@@ -98,10 +85,10 @@ button {
   }
   &__item {
     position: relative;
-    margin-top: 55px;
+    margin-bottom: 55px;
   }
-  &__item:first-child {
-    margin-top: 0px;
+  &__item:last-child {
+    margin-bottom: 0px;
   }
   &__input {
     width: 100%;
