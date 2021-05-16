@@ -5,7 +5,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  min-height: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,7 +15,8 @@
 
 .container {
   background: rgb(17, 23, 27, 0.75);
-  width: 430px;
+  max-width: 430px;
+  width: 100%;
   height: 545px;
   padding: 46px 43px 51px 43px;
   box-shadow: 0 2px 5px rgb(0, 0, 0);
@@ -50,6 +51,9 @@ button {
     font-weight: 700;
     margin-right: 40px;
     cursor: pointer;
+    @media (max-width: 350px) {
+      margin-right: 20px;
+    }
   }
   &__content {
     width: 100%;
@@ -112,6 +116,11 @@ button {
   }
   &__input:focus ~ .form__label {
     top: -18px;
+    font-size: 12px;
+  }
+  // float label for IE
+  .form__input:not(:-ms-input-placeholder) ~ .form__label {
+    top: -18px !important;
     font-size: 12px;
   }
   &__input:not(:placeholder-shown) ~ .form__label {
